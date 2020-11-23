@@ -7,7 +7,7 @@
 ```sh
 mkdir -p nginx/ db-data/ logs/nginx/  wordpress/
 ```
-## configuracion del proxy
+## Configuracion del proxy
 
 ```sh
 vim nginx/wordpress.conf
