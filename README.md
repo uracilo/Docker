@@ -11,9 +11,11 @@ docker run -itd alpine
 ## Sitio web estatico con docker
 ```sh
 docker pull nginx 
-````sh
+```
+
+```sh
 docker run -it --name=web
-``
+```
 
 ```sh
 docker exec -it web ls /usr/share/nginx/html
