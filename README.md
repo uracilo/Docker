@@ -12,7 +12,7 @@ docker run -itd alpine
 ```sh
 docker pull nginx 
 ```
-````sh
+```sh
 docker run -it --name=web
 ```
 
@@ -28,18 +28,3 @@ docker run -it --rm -d -p 8080:80 --name web -v $(pwd):/usr/share/nginx/html ngi
 ```sh
 docker stats
 ```
-
-
-## Applicaciones con docker 
-```sh
-docker run -it -d -p 8888:8888 --name="python" uracilo/bigdataben:2
-```
-
-```sh
-docker run --rm -it wernight/funbox nyancat
-```
-
-
-
-
-
