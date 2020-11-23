@@ -1,14 +1,13 @@
 # Wordpress
 
 
-```sh
-touch docker-compose.yml
-```
 
+## Generar volumenes
 
 ```sh
 mkdir -p nginx/ db-data/ logs/nginx/  wordpress/
 ```
+## configuracion del proxy
 
 ```sh
 vim nginx/wordpress.conf
@@ -40,4 +39,9 @@ server {
         fastcgi_param PATH_INFO $fastcgi_path_info;
     }
 }
+```
+## Correr el servicio
+
+```sh
+docker-compose -f  docker-compose.yml up
 ```
