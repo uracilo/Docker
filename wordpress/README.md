@@ -1,3 +1,5 @@
+# Wordpress
+
 
 ```sh
 touch docker-compose.yml
@@ -12,6 +14,7 @@ mkdir -p nginx/ db-data/ logs/nginx/  wordpress/
 vim nginx/wordpress.conf
 ```
 
+```sh
 
 server {
     listen 80;
@@ -37,3 +40,4 @@ server {
         fastcgi_param PATH_INFO $fastcgi_path_info;
     }
 }
+```
